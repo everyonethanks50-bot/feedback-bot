@@ -1,3 +1,4 @@
+from keep_alive import keep_alive
 import logging
 import os
 import json
@@ -698,4 +699,6 @@ def main():
     application.run_polling()
 
 if __name__ == '__main__':
+    keep_alive()
     main()
+
